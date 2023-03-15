@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background: #1C191A;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+  
+  nav ul li a {
+    color: #ad1128;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background: #444;
+  }
+
+  .top-left {
+    width: 40vw;
+    position: absolute;
+    top: -20vw;
+    left: -20vw;
+  }
+
+  .top-right {
+    width: 40vw;
+    position: absolute;
+    top: -20vw;
+    right: -20vw;
+  }
+
+
+  
+  .hero {
+    background-color: #1C191A;
+    text-align: center;
+    padding: 3rem;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero button {
+    background: #333;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background: #444;
+  }
+  
+  .about {
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+  }
+
+  .faq {
+    padding: 3rem;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
