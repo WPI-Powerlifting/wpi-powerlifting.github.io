@@ -8,10 +8,14 @@
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden;
   }
   
   header {
-    background: #1C191A;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background: transparent;
     padding: 1rem;
   }
   
@@ -50,18 +54,28 @@
     right: -20vw;
   }
 
+  .bottom-left {
+    width: 40vw;
+    position: absolute;
+    left: -20vw;
+  }
 
+  .bottom-right {
+    width: 40vw;
+    position: absolute;
+    right: -20vw;
+  }
   
   .hero {
-    background-color: #1C191A;
+    background-image: url("assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 320px;
+    background-position: center;
     text-align: center;
     padding: 3rem;
     color: #fff;
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
   }
   
   .hero p {
@@ -83,26 +97,66 @@
     background: #444;
   }
   
-  .about {
+  .text {
     padding: 3rem;
-    text-align: center;
   }
   
-  .about h2 {
+  .text h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
   
-  .about p {
+  .text p {
     font-size: 1.1rem;
   }
 
-  .faq {
-    padding: 3rem;
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
   }
   
+  .column {
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  .item {
+    height: 200px;
+    background-color: #f1f1f1;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .item:not(.item-expanded) {
+    overflow: hidden;
+  }
+
+  .item:not(.item-expanded):hover {
+    transform: scale(1.1);
+  }
+  
+  .item-expanded {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 2rem;
+    background-color: #ffffff;
+    z-index: 1000;
+    transition: all 0.3s;
+    overflow-y: scroll;
+  }
+
+
   footer {
-    background: #333;
+    background: #211F1F;
     color: #fff;
     text-align: center;
     padding: 1rem;
