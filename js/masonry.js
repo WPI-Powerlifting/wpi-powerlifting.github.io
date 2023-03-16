@@ -10,7 +10,6 @@ items.forEach((item) => {
       }
     } else {
       item.scrollTop = 0;
-      container.style.height = 'auto';
     }
   });
 });
