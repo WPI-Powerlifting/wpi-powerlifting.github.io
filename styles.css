@@ -111,6 +111,7 @@
   }
 
   .container {
+    height: 80vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -132,16 +133,17 @@
     transition: transform 0.3s;
     cursor: pointer;
     color: white;
+    background-size: cover;
+    background-position: center;
   }
 
   #about {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/shinzo_squat.jpg");
-    background-size: contain;
+
   }
 
   #faq {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/ivanski_bench.jpg");
-    background-size: contain;
   }
 
   .item:not(.item-expanded) {
@@ -150,6 +152,10 @@
 
   .item:not(.item-expanded):hover {
     transform: scale(1.1);
+  }
+
+  .item h1, .item h2, .item p {
+    filter: drop-shadow(0 0 0.75rem black);
   }
   
   .item-expanded {
