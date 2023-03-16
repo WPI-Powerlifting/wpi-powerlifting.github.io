@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Myriad';
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
@@ -194,6 +200,10 @@ footer {
   .item,
   .item-expanded {
     transition: none;
+  }
+
+  .item-expanded {
+    transform: translateX(5vw);
   }
 
 }
