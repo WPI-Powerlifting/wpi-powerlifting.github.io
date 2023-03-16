@@ -11,35 +11,6 @@
     overflow-x: hidden;
   }
   
-  header {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    background: transparent;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin: 0 0.5rem;
-  }
-  
-  nav ul li a {
-    color: #9B2931;
-    text-decoration: none;
-    padding: 0.5rem;
-    transition: background 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    background: #444;
-  }
-  
   .top-left {
     width: 40vw;
     position: absolute;
