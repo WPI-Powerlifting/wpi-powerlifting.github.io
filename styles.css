@@ -201,9 +201,4 @@ footer {
   .item-expanded {
     transition: none;
   }
-
-  .item-expanded {
-    transform: translateX(2.5vw);
-  }
-
 }
