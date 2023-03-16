@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
 }
 
+video {
+  filter: drop-shadow(0 0 0.5rem #AC2B37);
+}
+
 .hero {
   background: transparent;
   display: flex;
@@ -179,10 +183,6 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-
-  video {
-    filter: drop-shadow(0 0 0.25rem #AC2B37);
-  }
 
   .container {
     width: 100vw;
