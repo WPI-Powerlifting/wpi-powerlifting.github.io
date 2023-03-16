@@ -191,6 +191,7 @@ footer {
 
   .item-expanded {
     height: 90vh;
+    transform: translate(0vw);
   }
 
   .item:not(.item-expanded):hover {
