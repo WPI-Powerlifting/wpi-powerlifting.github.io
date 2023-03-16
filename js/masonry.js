@@ -6,7 +6,7 @@ function handleClick(item, container) {
   const isExpanded = item.classList.toggle('item-expanded');
   if (isExpanded) {
     if(!isMobile){
-      container.style.height = '1200px';
+      container.style.height = '1400px';
     }
   } else {
     item.scrollTop = 0;
