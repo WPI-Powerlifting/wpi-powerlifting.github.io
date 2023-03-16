@@ -3,55 +3,59 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  @font-face {
+    font-family: Myriad;
+    src: url('assets/Myriad Pro Bold.ttf');
+  }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Myriad';
     line-height: 1.6;
-    background-color: #211F1F;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("assets/wpipl.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     overflow-x: hidden;
   }
   
-  .top-left {
-    width: 40vw;
-    position: absolute;
-    top: -20vw;
-    left: -20vw;
-  }
-
-  .top-right {
-    width: 40vw;
-    position: absolute;
-    top: -20vw;
-    right: -20vw;
-  }
-  
   .hero {
-    background-image: url("assets/banner.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 320px;
-    background-position: center;
     text-align: center;
     padding: 3rem;
     color: #fff;
   }
+
+  .hero *{
+    margin: 0 5vw 0 5vw;
+  }
+
+  .hero img {
+    height: 100%;
+    width: auto;
+  }
   
   .hero button {
-    background-color: #9B2931;
+    background-color: #AC2B37;
+    height: 60px;
+    width: 200px;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 220px;
   }
   
   .hero button:hover {
     background-color: #fff;
-    color: #9B2931;
-    filter: drop-shadow(4px 4px 4px #9B2931);
+    color: #AC2B37;
+    filter: drop-shadow(4px 4px 4px #AC2B37);
   }
   
   .text {
@@ -73,9 +77,8 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #211F1F;
+    background-color: transparent;
     max-height: 100%;
-
     transition: max-height 0.4s ease-out;
   }
   
@@ -86,31 +89,31 @@
   
   .item {
     height: 200px;
-    background-color: #444;
     margin: 0 0 3rem;
     padding: 1rem;
     box-sizing: border-box;
     transition: all 0.4s;
     cursor: pointer;
-    color: #9B2931;
+    color: #AC2B37;
     background-size: cover;
     background-position: center;
+    transition: all 0.4s ease-out;
   }
 
   #about {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/shinzo_squat.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/shinzo_squat.jpg");
   }
 
   #join {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/celeste_squat.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/celeste_squat.jpg");
   }
 
   #faq {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/ivanski_bench.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/ivanski_bench.jpg");
   }
 
   #contact {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/vamos_kenny.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/vamos_kenny.jpg");
   }
 
   .item:not(.item-expanded) {
@@ -121,7 +124,11 @@
     transform: scale(1.1);
   }
 
-  .item h1, .item h2, .item p {
+  .item:not(.item-expanded) h1, .item:not(.item-expanded) h2, .item:not(.item-expanded) p {
+    filter: drop-shadow(0 0 0.25rem white);
+  }
+
+  .item-expanded h1, .item-expanded h2, .item-expanded p{
     filter: drop-shadow(0 0 0.75rem black);
   }
   
@@ -133,14 +140,13 @@
     height: 1200px;
     margin: 0;
     padding: 2rem;
-    background-color: #444;
     z-index: 1000;
     transition: all 0.4s;
     overflow-y: scroll;
   }
 
   footer {
-    background: #211F1F;
+    background: black;
     color: #fff;
     text-align: center;
     padding: 1rem;
