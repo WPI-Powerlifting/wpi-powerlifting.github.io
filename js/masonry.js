@@ -7,7 +7,8 @@ document.querySelectorAll('.item').forEach((item) => {
         container.style.height = 'auto';
       } else {
         item.classList.add('item-expanded');
-        container.style.height = (item.scrollHeight + 40) + 'px';
+        let offeset = item.getAttribute('id') === 'contact' ? 500 : 40;
+        container.style.height = (item.scrollHeight + offeset) + 'px';
       }
     });
   });
