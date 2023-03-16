@@ -107,7 +107,6 @@
             -ms-user-select: none; /* Internet Explorer/Edge */
                 user-select: none; /* Non-prefixed version, currently
                                       supported by Chrome, Edge, Opera and Firefox */
-
   }
 
   #about {
@@ -144,6 +143,7 @@
   
   .item-expanded {
     position: absolute;
+    color: white;
     top: 0;
     left: 0;
     width: 100%;
@@ -175,6 +175,10 @@
 
     .item:not(.item-expanded):hover {
       transform: none;
+    }
+
+    .item, .item-expanded {
+      transition: none;
     }
 
   }

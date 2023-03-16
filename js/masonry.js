@@ -1,16 +1,16 @@
-document.querySelectorAll('.item').forEach((item) => {
-    item.addEventListener('click', () => {
-      const container = document.querySelector('.container');
-      if (item.classList.contains('item-expanded')) {
-        item.classList.remove('item-expanded');
-        item.style.color = '#9B2931';
-        item.scrollTop = 0;
-        container.style.height = 'auto';
-      } else {
-        item.classList.add('item-expanded');
-        item.style.color = 'white';
+const items = document.querySelectorAll('.item');
+const container = document.querySelector('.container');
+
+items.forEach((item) => {
+  item.addEventListener('click', () => {
+    const isExpanded = item.classList.toggle('item-expanded');
+    if (isExpanded) {
+      if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         container.style.height = '1200px';
       }
-    });
+    } else {
+      item.scrollTop = 0;
+      container.style.height = 'auto';
+    }
   });
-  
+});
