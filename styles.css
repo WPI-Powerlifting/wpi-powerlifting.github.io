@@ -203,7 +203,7 @@ footer {
   }
 
   .item-expanded {
-    transform: translateX(5vw);
+    transform: translateX(2.5vw);
   }
 
 }
