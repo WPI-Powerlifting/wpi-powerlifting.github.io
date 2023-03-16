@@ -162,3 +162,19 @@
     padding: 1rem;
   }
   
+  @media screen and (max-width: 1300px) {
+
+    .container{
+      width: 80vw;
+      height: 100vh;
+    }
+
+    .item-expanded {
+      height: 100vh;
+    }
+
+    .item:not(.item-expanded):hover {
+      transform: none;
+    }
+
+  }
