@@ -59,8 +59,8 @@
   }
   
   .text h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
   }
   
   .text p {
@@ -87,18 +87,22 @@
   .item {
     height: 200px;
     background-color: #444;
-    margin: 0 0 1rem;
+    margin: 0 0 3rem;
     padding: 1rem;
     box-sizing: border-box;
     transition: all 0.4s;
     cursor: pointer;
-    color: white;
+    color: #9B2931;
     background-size: cover;
     background-position: center;
   }
 
   #about {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/shinzo_squat.jpg");
+  }
+
+  #join {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("assets/celeste_squat.jpg");
   }
 
   #faq {
@@ -126,7 +130,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: fit-content;
+    height: 1200px;
     margin: 0;
     padding: 2rem;
     background-color: #444;

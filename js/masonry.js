@@ -3,12 +3,13 @@ document.querySelectorAll('.item').forEach((item) => {
       const container = document.querySelector('.container');
       if (item.classList.contains('item-expanded')) {
         item.classList.remove('item-expanded');
+        item.style.color = '#9B2931';
         item.scrollTop = 0;
         container.style.height = 'auto';
       } else {
         item.classList.add('item-expanded');
-        let offeset = item.getAttribute('id') === 'contact' ? 500 : 40;
-        container.style.height = (item.scrollHeight + offeset) + 'px';
+        item.style.color = 'white';
+        container.style.height = '1200px';
       }
     });
   });
