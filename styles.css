@@ -271,7 +271,7 @@ footer {
   }
 
   #community .item:not(.item-expanded) {
-    height: 270px;
+    height: 220px;
   }
 
   .item-expanded {
