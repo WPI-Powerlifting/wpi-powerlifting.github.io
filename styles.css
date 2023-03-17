@@ -36,12 +36,23 @@ video {
   align-items: center;
 }
 
+.profile h3 {
+  text-align: center;
+}
+
 .centered{
   width: 100%;
   display: flex; 
-  justify-content: space-between; 
   align-items: center;
   text-align: center;
+}
+
+.centered.two {
+  justify-content: space-between; 
+}
+
+.centered.one {
+  justify-content: center; 
 }
 
 .hero {
@@ -167,19 +178,27 @@ video {
 }
 
 #feature:not(.item-expanded) {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/WPIPL_Team_Pic.JPG");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/WPIPL_Team_Pic-min.JPG");
 }
 
 #feature {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/WPIPL_Team_Pic.JPG");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/WPIPL_Team_Pic-min.JPG");
 }
 
 #speeep:not(.item-expanded) {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/speeep/community_div_background_img.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/speeep/community_div_background_img-min.jpg");
 }
 
 #speeep {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/speeep/community_div_background_img.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/speeep/community_div_background_img-min.jpg");
+}
+
+#amy:not(.item-expanded) {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/amy/amy-background-min.jpg");
+}
+
+#amy {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/amy/amy-background-min.jpg");
 }
 
 .item:not(.item-expanded) {
