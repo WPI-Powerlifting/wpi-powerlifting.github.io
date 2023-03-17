@@ -121,7 +121,6 @@ video {
   height: 200px;
   margin: 0 0 3rem;
   box-sizing: border-box;
-  transition: all 0.4s;
   cursor: pointer;
   background-size: cover;
   background-position: center;
@@ -268,7 +267,7 @@ footer {
     transform: none;
   }
 
-  * {
+  .hero button, .container, .item, .item *, .item-expanded {
     transition: none;
   }
 }
