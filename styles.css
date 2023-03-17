@@ -27,7 +27,7 @@ body {
 }
 
 video {
-  filter: drop-shadow(0 0 0.5rem #AC2B37);
+  filter: drop-shadow(0 0 0.5rem white);
 }
 
 .profile{
