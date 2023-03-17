@@ -197,16 +197,15 @@ video {
 .item:not(.item-expanded) h2,
 .item:not(.item-expanded) p,
 .item:not(.item-expanded) a {
-  filter: drop-shadow(0 0 0.4rem white);
   color: #AC2B37;
 }
 
-.item-expanded h1,
-.item-expanded h2,
-.item-expanded h3,
-.item-expanded p,
-.item-expanded a {
-  filter: drop-shadow(0 0 0.25rem black);
+.item h1,
+.item h2,
+.item h3,
+.item p,
+.item a {
+  filter: drop-shadow(0 0 0.6rem black);
 }
 
 .item .link {
