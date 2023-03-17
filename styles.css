@@ -270,7 +270,7 @@ footer {
     height: 90vh;
   }
 
-  #community .item {
+  #community .item:not(.item-expanded) {
     height: 270px;
   }
 
