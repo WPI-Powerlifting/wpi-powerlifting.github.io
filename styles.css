@@ -197,7 +197,7 @@ video {
 .item:not(.item-expanded) h2,
 .item:not(.item-expanded) p,
 .item:not(.item-expanded) a {
-  filter: drop-shadow(0 0 0.25rem white);
+  filter: drop-shadow(0 0 0.4rem white);
   color: #AC2B37;
 }
 
@@ -246,7 +246,7 @@ svg.off-site:hover > path{
 
 footer {
   background: black;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 1rem;
 }
@@ -256,6 +256,10 @@ footer {
   .container {
     width: 100vw;
     height: 90vh;
+  }
+
+  #community .item {
+    height: 300px;
   }
 
   .item-expanded {
