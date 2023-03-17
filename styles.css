@@ -138,28 +138,52 @@ video {
   transition: all 0.4s ease-out;
 }
 
-#about {
+#about:not(.item-expanded) {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/shinzo_squat-min.jpg");
 }
 
-#join {
+#about {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/shinzo_squat-min.jpg");
+}
+
+#join:not(.item-expanded) {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/celeste_squat-min.jpg");
 }
 
-#faq {
+#join {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/celeste_squat-min.jpg");
+}
+
+#faq:not(.item-expanded) {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/ivanski_bench-min.jpg");
 }
 
-#contact {
+#faq {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/ivanski_bench-min.jpg");
+}
+
+#contact:not(.item-expanded) {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/vamos_kenny-min.jpg");
 }
 
+#contact {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/vamos_kenny-min.jpg");
+}
+
+#feature:not(.item-expanded) {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/WPIPL_Team_Pic.JPG");
+}
+
 #feature {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/shinzo_squat-min.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/WPIPL_Team_Pic.JPG");
+}
+
+#speeep:not(.item-expanded) {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/speeep/community_div_background_img.jpg");
 }
 
 #speeep {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/speeep/community_div_background_img.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/speeep/community_div_background_img.jpg");
 }
 
 .item:not(.item-expanded) {

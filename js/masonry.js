@@ -18,7 +18,7 @@ function handleClick(item, container) {
 
 homeItems.forEach((item) => {
   item.addEventListener('click', (event) => {
-    if (event.target.tagName !== 'A'){
+    if (event.target.tagName !== 'A' && !event.target.matches('svg, svg * , path, path *')) {
       const container = document.getElementById('home');
       handleClick(item, container);
     }
@@ -27,7 +27,7 @@ homeItems.forEach((item) => {
 
 communityItems.forEach((item) => {
   item.addEventListener('click', (event) => {
-    if (event.target.tagName !== 'A'){
+  if (event.target.tagName !== 'A' && !event.target.matches('svg, svg * , path, path *')) {
       const container = document.getElementById('community');
       handleClick(item, container);
     }
