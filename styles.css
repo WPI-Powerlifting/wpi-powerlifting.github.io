@@ -89,6 +89,7 @@ video {
 }
 
 .text h1 {
+  line-height: normal;
   font-size: 4rem;
   margin-bottom: 3rem;
 }
