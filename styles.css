@@ -55,10 +55,6 @@ video {
   color: #fff;
 }
 
-.hero * {
-  margin: 0 2.5vw 0 2.5vw;
-}
-
 .hero img {
   height: 100%;
   width: auto;
