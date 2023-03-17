@@ -209,6 +209,22 @@ video {
   filter: drop-shadow(0 0 0.6rem black);
 }
 
+#contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+#contact a:hover:before {
+  display: inline-block;
+}
+#contact a::before {
+  content: '>';
+  display: none;
+}
+
 .item .link {
   color: white;
   text-decoration: none;
