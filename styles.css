@@ -210,6 +210,14 @@ video {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/shinzo/shinzo-background-min.jpg");
 }
 
+#eddie:not(.item-expanded) {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/eddie/background-min.jpg");
+}
+
+#eddie {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/eddie/background-min.jpg");
+}
+
 .item:not(.item-expanded) {
   overflow: hidden;
 }
