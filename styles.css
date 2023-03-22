@@ -226,6 +226,15 @@ video {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/phi/background-min.jpg");
 }
 
+#rahul:not(.item-expanded) {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("assets/featured/rahul/background-min.jpg");
+}
+
+#rahul {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("assets/featured/rahul/background-min.jpg");
+}
+
+
 .item:not(.item-expanded) {
   overflow: hidden;
 }
